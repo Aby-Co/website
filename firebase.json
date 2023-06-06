@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "public": ".output/public",
+    "region": "asia-south1",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
