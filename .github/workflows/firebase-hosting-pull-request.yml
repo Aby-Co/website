@@ -13,10 +13,8 @@ jobs:
       - uses: pnpm/action-setup@v2
         with:
           version: 8.6.0
-          run_install: false
-            # - recursive: true
-            #   args: [--frozen-lockfile, --strict-peer-dependencies]
-            # - args: [--global, gulp, prettier, typescript]
+          run_install: |
+            - && pnpm generate
 
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
