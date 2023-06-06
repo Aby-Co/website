@@ -13,9 +13,13 @@ jobs:
       - uses: pnpm/action-setup@v2
         with:
           version: 8.6.0
-          run_install: false
+          run_install: true
         
-      - run: pnpm generate
+      - name: Generate output directory
+        id: generate
+        shell: bash
+        run: |
+          pnpm generate
       
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
