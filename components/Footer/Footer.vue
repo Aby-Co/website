@@ -1,6 +1,7 @@
 <style>
 ul>li {
-  margin: 0.5rem auto;
+  margin: 0 auto;
+  padding: 0.5rem 0.25rem;
 }
 .footer>article {
   padding: 0.25rem;
